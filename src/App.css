@@ -1,0 +1,17 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.app-cnt {
+  position: relative;
+}
+
+.app-cnt--content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  padding: 0vh 20vw;
+}

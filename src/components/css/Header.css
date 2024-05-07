@@ -1,0 +1,111 @@
+@import url("./variables.css");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  opacity: 0;
+  font-family: var(--font-primary);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20px; /* Adjust the size of the hexagon */
+  height: 20px; /* Adjust the size of the hexagon */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  color: var(--secondary-color);
+  border-bottom: 27.5px solid #64ffda; /* Set the color of the hexagon */
+  border: 1px solid;
+}
+
+.logo::before,
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 1px solid transparent; /* Half the width of the hexagon */
+  border-right: 1px solid transparent; /* Half the width of the hexagon */
+}
+
+.logo::before {
+  top: -27.5px; /* Half the height of the hexagon */
+  border-bottom: 27.5px solid #64ffda; /* Set the color of the hexagon */
+}
+
+.logo::after {
+  bottom: -27.5px; /* Half the height of the hexagon */
+  border-top: 27.5px solid #64ffda; /* Set the color of the hexagon */
+}
+
+.logo:hover {
+  font-weight: 900;
+}
+
+.header-content {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.header-content-list {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  list-style: none;
+}
+
+.header-content-list li a span {
+  color: var(--secondary-color);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.header-content-list li a {
+  color: rgba(255, 255, 255, 0.728);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.header-content-list li :hover {
+  color: var(--secondary-color);
+}
+
+.btn-cnt {
+  position: relative;
+}
+
+.btn-cnt:hover ~ .header-content-list {
+  margin: 100px;
+}
+
+.header-item {
+  opacity: 0; /* Set initial opacity to 0 */
+}
+
+.delay-0 {
+  animation: fadeIn 0.5s ease 0.5s 1 normal forwards;
+}
+
+.delay-75 {
+  animation: fadeIn 0.5s ease 0.75s 1 normal forwards;
+}
+
+.delay-150 {
+  animation: fadeIn 0.5s ease 1.5s 1 normal forwards;
+}
+
+.delay-210 {
+  animation: fadeIn 0.5s ease 2.15s 1 normal forwards;
+}

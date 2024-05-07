@@ -1,0 +1,33 @@
+@import "./variables.css";
+
+* {
+  margin-top: 0%;
+  padding: 0%;
+}
+
+.content-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.greeting-cnt p {
+  font-family: var(--font-primary);
+  color: var(--secondary-color);
+}
+
+.name-cnt h1 {
+  font-size: clamp(30px, 7vw, 60px);
+  font-family: var(--font-primary);
+  font-weight: 800;
+  /* letter-spacing: 0px; */
+  color: var(--name-color);
+}
+
+.introduction-cnt h1 {
+  font-size: clamp(30px, 7vw, 60px);
+  font-family: var(--font-primary);
+  font-weight: 800;
+  color: var(--slate-color);
+}
