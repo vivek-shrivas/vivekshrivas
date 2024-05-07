@@ -4,7 +4,7 @@ const Socials = () => {
   const width = "20px";
   const height = "20px";
   return (
-    <div className="socials-cnt delay-350">
+    <div className="socials-cnt delay-500">
       <ul>
         <li>
           <a href="https://github.com">

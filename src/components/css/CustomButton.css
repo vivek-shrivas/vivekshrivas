@@ -33,5 +33,5 @@
 }
 
 .delay-280 {
-  animation: fadeIn 0.5s ease 2.8s 1 normal forwards;
+  animation: fadeIn 2.25s ease 400ms 1 normal forwards;
 }

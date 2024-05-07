@@ -5,29 +5,116 @@
   padding: 0%;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .content-cnt {
   display: flex;
+  transition: fadein;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
 
 .greeting-cnt p {
+  opacity: 0;
   font-family: var(--font-primary);
   color: var(--secondary-color);
 }
 
 .name-cnt h1 {
+  opacity: 0;
   font-size: clamp(30px, 7vw, 60px);
   font-family: var(--font-primary);
+  letter-spacing: -2px;
+
   font-weight: 800;
   /* letter-spacing: 0px; */
   color: var(--name-color);
 }
 
 .introduction-cnt h1 {
+  opacity: 0;
   font-size: clamp(30px, 7vw, 60px);
+  letter-spacing: -2px;
+  word-spacing: -20px;
   font-family: var(--font-primary);
   font-weight: 800;
   color: var(--slate-color);
+}
+
+.detailed-intro p {
+  opacity: 0;
+  font-size: clamp(25px, 10px);
+  letter-spacing: -2px;
+  font-family: var(--font-primary);
+  font-weight: 100;
+  color: var(--slate-color);
+}
+
+.tech-stack-cnt {
+  display: flex;
+  margin-top: 20px;
+  color: var(--secondary-color);
+  flex-direction: column;
+  height: fit-content;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.--tech-stack-heading-cnt {
+  opacity: 0;
+}
+.--stack {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.--stack div svg {
+  animation: fadeIn;
+  width: 50px;
+  height: 50px;
+  margin: 0%;
+  padding: 0%;
+}
+
+.--stack-item {
+  opacity: 0;
+}
+
+.delay-400 {
+  animation: fadeIn 1s ease 450ms normal forwards;
+}
+
+.delay-425 {
+  animation: fadeIn 1s ease 500ms 1 normal forwards;
+}
+.delay-450 {
+  animation: fadeIn 1s ease 600ms 1 normal forwards;
+}
+.delay-500 {
+  animation: fadeIn 1s ease 700ms 1 normal forwards;
+}
+
+.delay-550 {
+  animation: fadeIn 1s ease 800ms 1 normal forwards;
+}
+.delay-600 {
+  animation: fadeIn 1s ease 850ms 1 normal forwards;
+}
+.delay-650 {
+  animation: fadeIn 1s ease 950ms 1 normal forwards;
+}
+.delay-700 {
+  animation: fadeIn 1s ease 1050ms 1 normal forwards;
+}
+.delay-750 {
+  animation: fadeIn 1s ease 1150ms 1 normal forwards;
 }

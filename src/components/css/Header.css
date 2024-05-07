@@ -95,17 +95,17 @@ header {
 }
 
 .delay-0 {
-  animation: fadeIn 0.5s ease 0.5s 1 normal forwards;
+  animation: fadeIn 1s ease 0ms 1 normal forwards;
 }
 
 .delay-75 {
-  animation: fadeIn 0.5s ease 0.75s 1 normal forwards;
+  animation: fadeIn 1.25s ease 100ms 1 normal forwards;
 }
 
 .delay-150 {
-  animation: fadeIn 0.5s ease 1.5s 1 normal forwards;
+  animation: fadeIn 1.5s ease 200ms 1 normal forwards;
 }
 
 .delay-210 {
-  animation: fadeIn 0.5s ease 2.15s 1 normal forwards;
+  animation: fadeIn 2s ease 300ms 1 normal forwards;
 }
