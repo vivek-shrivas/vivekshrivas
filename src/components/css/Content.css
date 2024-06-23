@@ -14,12 +14,20 @@
   }
 }
 
+.outer-content-cnt {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
 .content-cnt {
   display: flex;
-  transition: fadein;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  flex-grow: 1;
+  transition: fadein;
 }
 
 .greeting-cnt p {
@@ -117,4 +125,67 @@
 }
 .delay-750 {
   animation: fadeIn 1s ease 1150ms 1 normal forwards;
+}
+
+.delay-800 {
+  animation: fadeIn 1s ease 1250ms 1 normal forwards;
+}
+
+.profile-image-border1 {
+  border-radius: 59% 41% 62% 38% / 56% 44% 63% 56%;
+  width: 240px;
+  height: 251px;
+  color: beige;
+  border: 2px solid var(--secondary-color);
+  transition: bubble1 ease;
+  animation: bubble1 3s infinite;
+}
+
+.profile-image-border2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41% 59% 38% 62% / 56% 46% 54% 44%;
+  width: 240px;
+  height: 251px;
+  color: beige;
+  border: 2px solid var(--secondary-color);
+  transition: bubble2 ease;
+  animation: bubble2 3s infinite;
+}
+
+.profile-image-border1 img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 55%;
+}
+
+@keyframes bubble1 {
+  0% {
+    border-radius: 59% 41% 62% 38% / 46% 56% 44% 54%;
+  }
+  50% {
+    border-radius: 41% 59% 38% 62% / 56% 46% 54% 44%;
+  }
+  100% {
+    border-radius: 59% 41% 62% 38% / 46% 56% 44% 54%;
+  }
+}
+
+@keyframes bubble2 {
+  0% {
+    border-radius: 41% 59% 38% 62% / 56% 46% 54% 44%;
+  }
+  50% {
+    border-radius: 59% 41% 62% 38% / 46% 56% 44% 54%;
+  }
+  100% {
+    border-radius: 41% 59% 38% 62% / 56% 46% 54% 44%;
+  }
+}
+
+.profile-image-cnt img {
+  height: 300px;
+  opacity: 0;
 }
